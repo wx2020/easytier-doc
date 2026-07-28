@@ -1,0 +1,10 @@
+wx2020 EasyTier Documentation
+
+This product includes documentation derived from EasyTier:
+https://github.com/EasyTier/easytier.github.io
+
+The upstream EasyTier documentation is licensed under the Apache License,
+Version 2.0.
+
+This fork contains modifications for the wx2020 private/self-hosted EasyTier
+build and is not the official EasyTier documentation distribution.

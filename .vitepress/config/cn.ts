@@ -94,11 +94,8 @@ export const cn = defineConfig({
       },
     ],
     footer: {
-      message: '基于 Apache License 2.0 许可发布',
-      copyright: '版权所有 © 2024-present EasyTier | '
-        + '<a href="https://beian.miit.gov.cn/">'
-        + '<img src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" alt="ICP 备案" style="width: 16px; height: 16px; display: inline-block; margin-bottom: -4px;">'
-        + '浙ICP备2024137671号-1</a>',
+      message: 'EasyTier 文档站的自修改 fork，基于 Apache License 2.0 发布',
+      copyright: 'Copyright © 2024-present EasyTier contributors; modifications © wx2020',
     },
     editLink: {
       pattern: 'https://github.com/wx2020/easytier.github.io/edit/main/:path',

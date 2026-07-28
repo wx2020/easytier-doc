@@ -90,11 +90,8 @@ export const en = defineConfig({
       },
     ],
     footer: {
-      message: 'Released under the Apache License 2.0',
-      copyright: 'Copyright © 2024-present EasyTier | '
-        + '<a href="https://beian.miit.gov.cn/">'
-        + '<img src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" alt="ICP Record" style="width: 16px; height: 16px; display: inline-block; margin-bottom: -4px;">'
-        + 'Zhejiang ICP No. 2024137671-1</a>',
+      message: 'Modified fork of the EasyTier documentation site, released under the Apache License 2.0',
+      copyright: 'Copyright © 2024-present EasyTier contributors; modifications © wx2020',
     },
     editLink: {
       pattern: 'https://github.com/wx2020/easytier.github.io/edit/main/:path',
