@@ -7,7 +7,7 @@ import { cn, cnSearch } from './cn'
 import { en } from './en'
 
 export default withMermaid({
-  base: '/easytier-doc/',
+  base: process.env.VITEPRESS_BASE || '/easytier-doc/',
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/easytier.png' }],
