@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: wx2020 EasyTier
-  text: Private modified build
-  tagline: Keeps EasyTier networking features while avoiding official or public infrastructure by default
+  text: Private EasyTier documentation
+  tagline: Modified private build that avoids official or public infrastructure by default
   image:
     light: '/gui-config-light.png'
     dark: '/gui-config-dark.png'

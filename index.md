@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: wx2020 EasyTier
-  text: 自修改私有化构建
-  tagline: 保留 EasyTier 组网能力，默认不依赖官方或公共基础设施
+  text: 私有化 EasyTier 文档
+  tagline: 自修改私有化构建，默认不依赖官方或公共基础设施
   image:
     light: '/gui-config-light.png'
     dark: '/gui-config-dark.png'
