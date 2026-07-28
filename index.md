@@ -2,8 +2,7 @@
 layout: home
 
 hero:
-  name: wx2020 EasyTier
-  text: 私有化 EasyTier 文档
+  name: 非官方 EasyTier
   tagline: 自修改私有化构建，默认不依赖官方或公共基础设施
   image:
     light: '/gui-config-light.png'

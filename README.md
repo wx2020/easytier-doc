@@ -1,6 +1,6 @@
-# wx2020 EasyTier Documentation
+# 非官方 EasyTier Documentation
 
-[简体中文](https://wx2020.github.io/easytier.github.io/) | [English](https://wx2020.github.io/easytier.github.io/en/)
+[简体中文](https://wx2020.github.io/easytier-doc/) | [English](https://wx2020.github.io/easytier-doc/en/)
 
 This repository is a modified fork of the EasyTier documentation site. It is not the official EasyTier documentation distribution.
 

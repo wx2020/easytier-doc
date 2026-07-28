@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: wx2020 EasyTier
+  name: 非官方 EasyTier
   text: Private EasyTier documentation
   tagline: Modified private build that avoids official or public infrastructure by default
   image:

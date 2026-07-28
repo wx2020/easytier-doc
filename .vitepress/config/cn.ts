@@ -94,11 +94,11 @@ export const cn = defineConfig({
       },
     ],
     footer: {
-      message: 'EasyTier 文档站的自修改 fork，基于 Apache License 2.0 发布',
+      message: '基于 Apache License 2.0 发布',
       copyright: 'Copyright © 2024-present EasyTier contributors; modifications © wx2020',
     },
     editLink: {
-      pattern: 'https://github.com/wx2020/easytier.github.io/edit/main/:path',
+      pattern: 'https://github.com/wx2020/easytier-doc/edit/main/:path',
       text: '在 GitHub 上编辑此页面',
     },
     docFooter: {
