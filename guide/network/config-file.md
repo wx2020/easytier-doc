@@ -16,7 +16,7 @@ easytier-core -c ./config.yaml
 
 ## EasyTier 配置助手
 
-如果不想手动编写配置文件，可以访问 [EasyTier 配置助手](https://easytier.rs/assistant) 按需生成配置文件，然后通过 `-c` 参数加载：
+私有化构建不默认使用官方在线配置助手。建议参考 [私有化部署](../private-deployment) 准备自建配置服务器，或手动编写配置文件后通过 `-c` 参数加载：
 
 ```sh
 easytier-core -c ./config.toml

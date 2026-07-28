@@ -13,6 +13,7 @@ export const cn = defineConfig({
           { text: '功能简介', link: '/guide/introduction' },
           { text: '下载', link: '/guide/download' },
           { text: '安装 CLI', link: '/guide/installation' },
+          { text: '私有化部署', link: '/guide/private-deployment' },
           { text: '安装 GUI', link: '/guide/installation_gui' },
           { text: '常见问题', link: '/guide/faq' },
         ],
@@ -80,16 +81,16 @@ export const cn = defineConfig({
         link: '/web',
       },
       {
-        text: '<iconify-icon icon="fa6-solid:wand-magic-sparkles" style="margin-right:0.25rem;color:#8B5CF6;" alt="assistant"></iconify-icon>配置助手',
-        link: 'https://easytier.rs/assistant',
+        text: '<iconify-icon icon="fa6-solid:server" style="margin-right:0.25rem;color:#8B5CF6;" alt="private"></iconify-icon>私有化部署',
+        link: '/guide/private-deployment',
       },
       {
         text: '<iconify-icon icon="fa6-solid:bug" style="margin-right:0.25rem;color:#FF4500;" alt="bug"></iconify-icon>提交反馈',
-        link: 'https://github.com/EasyTier/EasyTier/issues',
+        link: 'https://github.com/wx2020/EasyTier/issues',
       },
       {
         text: '<iconify-icon icon="fa6-solid:clipboard-list" style="margin-right:0.25rem;color:#FF6347;" alt="clipboard"></iconify-icon>变更日志',
-        link: 'https://github.com/EasyTier/EasyTier/releases',
+        link: 'https://github.com/wx2020/EasyTier/releases',
       },
     ],
     footer: {
@@ -100,7 +101,7 @@ export const cn = defineConfig({
         + '浙ICP备2024137671号-1</a>',
     },
     editLink: {
-      pattern: 'https://github.com/EasyTier/easytier.github.io/edit/main/:path',
+      pattern: 'https://github.com/wx2020/easytier.github.io/edit/main/:path',
       text: '在 GitHub 上编辑此页面',
     },
     docFooter: {

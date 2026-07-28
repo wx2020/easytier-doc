@@ -9,8 +9,8 @@ export function useLatestVersion() {
   onMounted(async () => {
     try {
       const [latestRes, releasesRes] = await Promise.all([
-        fetch('https://api.github.com/repos/EasyTier/EasyTier/releases/latest'),
-        fetch('https://api.github.com/repos/EasyTier/EasyTier/releases?per_page=5'),
+        fetch('https://api.github.com/repos/wx2020/EasyTier/releases/latest'),
+        fetch('https://api.github.com/repos/wx2020/EasyTier/releases?per_page=5'),
       ])
 
       if (!latestRes.ok || !releasesRes.ok) {

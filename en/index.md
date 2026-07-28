@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: Download
       link: /en/guide/download
+    - theme: alt
+      text: Private Deployment
+      link: /en/guide/private-deployment
     - theme: sponsor
       text: 💚 Sponsor
       link: /#sponsor

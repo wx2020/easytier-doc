@@ -11,13 +11,13 @@
 推荐直接在希望安装 EasyTier 的目录中打开 PowerShell，然后执行：
 
 ```PowerShell
-iwr "https://raw.githubusercontent.com/EasyTier/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd
+iwr "https://raw.githubusercontent.com/wx2020/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd
 ```
 
 如果无法访问 GitHub，可以使用镜像代理：
 
 ```PowerShell
-iwr "https://ghfast.top/https://raw.githubusercontent.com/EasyTier/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd -ughp
+iwr "https://ghfast.top/https://raw.githubusercontent.com/wx2020/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd -ughp
 ```
 
 脚本会根据提示完成配置，并在安装成功后自动启动服务。

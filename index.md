@@ -18,6 +18,9 @@ hero:
       text: 下载
       link: /guide/download
     - theme: alt
+      text: 私有化部署
+      link: /guide/private-deployment
+    - theme: alt
       text: 隐私政策
       link: /guide/privacy
     - theme: sponsor

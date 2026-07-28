@@ -11,13 +11,13 @@ The recommended approach is to use the official `install.cmd` script for install
 Open PowerShell in the directory where you want to install EasyTier and run:
 
 ```PowerShell
-iwr "https://raw.githubusercontent.com/EasyTier/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd
+iwr "https://raw.githubusercontent.com/wx2020/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd
 ```
 
 If GitHub is not accessible, use the mirror proxy command instead:
 
 ```PowerShell
-iwr "https://ghfast.top/https://raw.githubusercontent.com/EasyTier/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd -ughp
+iwr "https://ghfast.top/https://raw.githubusercontent.com/wx2020/EasyTier/main/script/install.cmd" -OutFile "install.cmd"; .\install.cmd -ughp
 ```
 
 The script will guide you through the setup and start the service automatically after installation succeeds.

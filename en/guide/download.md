@@ -24,7 +24,7 @@ function gen_pkg_without_gui(os: string, archs: string[]): Package[] {
             arch,
             gui_pkg_tmpl: {},
             cli_pkg_tmpl: {
-                "zip": `https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-linux-${arch}-v{}.zip`,
+                "zip": `https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-linux-${arch}-v{}.zip`,
             },
         }
     })
@@ -35,10 +35,10 @@ const packages = ref<Package[]>([
         os: 'Windows',
         arch: 'x86_64',
         gui_pkg_tmpl: {
-            "exe": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-gui_{}_x64-setup.exe'
+            "exe": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-gui_{}_x64-setup.exe'
         },
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-windows-x86_64-v{}.zip'
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-windows-x86_64-v{}.zip'
         },
         comment: "Windows 7 needs to be SP1 and above, and you need to install the two patches KB3063858 and KB4474419, and disable QUIC input."
     },
@@ -46,31 +46,31 @@ const packages = ref<Package[]>([
         os: "Windows",
         arch: "arm64",
         gui_pkg_tmpl: {
-            "exe": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-gui_{}_arm64-setup.exe'
+            "exe": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-gui_{}_arm64-setup.exe'
         },
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-windows-arm64-v{}.zip'
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-windows-arm64-v{}.zip'
         },
     },
     {
         os: "Linux",
         arch: "x86_64",
         gui_pkg_tmpl: {
-            "deb": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-gui_{}_amd64.deb',
-            "AppImage": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-gui_{}_amd64.AppImage',
+            "deb": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-gui_{}_amd64.deb',
+            "AppImage": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-gui_{}_amd64.AppImage',
         },
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-linux-x86_64-v{}.zip',
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-linux-x86_64-v{}.zip',
         },
     },
     {
         os: "Linux",
         arch: "aarch64",
         gui_pkg_tmpl: {
-            "deb": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-gui_{}_arm64.deb',
+            "deb": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-gui_{}_arm64.deb',
         },
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-linux-aarch64-v{}.zip',
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-linux-aarch64-v{}.zip',
         },
     },
     ...gen_pkg_without_gui("Linux", ["arm", "armhf", "armv7", "armv7hf", "mips", "mipsel"]),
@@ -78,10 +78,10 @@ const packages = ref<Package[]>([
         os: "MacOS",
         arch: "x86_64",
         gui_pkg_tmpl: {
-            "dmg": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-gui_{}_x64.dmg',
+            "dmg": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-gui_{}_x64.dmg',
         },
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-macos-x86_64-v{}.zip',
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-macos-x86_64-v{}.zip',
         },
         comment: "After installing the GUI, you need to manually execute xattr -c /Applications/easytier-gui.app, otherwise it will prompt that the file is damaged"
     },
@@ -89,10 +89,10 @@ const packages = ref<Package[]>([
         os: "MacOS",
         arch: "aarch64",
         gui_pkg_tmpl: {
-            "dmg": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-gui_{}_aarch64.dmg',
+            "dmg": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-gui_{}_aarch64.dmg',
         },
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-macos-aarch64-v{}.zip',
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-macos-aarch64-v{}.zip',
         },
         comment: "After installing the GUI, you need to manually execute xattr -c /Applications/easytier-gui.app, otherwise it will prompt that the file is damaged"
     },
@@ -100,7 +100,7 @@ const packages = ref<Package[]>([
         os: "Android",
         arch: "arm64",
         gui_pkg_tmpl: {
-            "apk": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/app-arm64-release.apk',
+            "apk": 'https://github.com/wx2020/EasyTier/releases/download/v{}/app-arm64-release.apk',
         },
         cli_pkg_tmpl: {},
         comment: "Choose this version for new Android devices. If you encounter abnormal display issues, please try upgrading WebView"
@@ -109,7 +109,7 @@ const packages = ref<Package[]>([
         os: "Android",
         arch: "arm",
         gui_pkg_tmpl: {
-            "apk": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/app-arm-release.apk',
+            "apk": 'https://github.com/wx2020/EasyTier/releases/download/v{}/app-arm-release.apk',
         },
         cli_pkg_tmpl: {},
         comment: "Choose this version for older Android devices. If you encounter abnormal display issues, please try upgrading WebView"
@@ -118,7 +118,7 @@ const packages = ref<Package[]>([
         os: "Android",
         arch: "x86_64",
         gui_pkg_tmpl: {
-            "apk": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/app-x86_64-release.apk',
+            "apk": 'https://github.com/wx2020/EasyTier/releases/download/v{}/app-x86_64-release.apk',
         },
         cli_pkg_tmpl: {},
         comment: "If you encounter abnormal display issues, please try upgrading WebView"
@@ -127,7 +127,7 @@ const packages = ref<Package[]>([
         os: "Android",
         arch: "x86",
         gui_pkg_tmpl: {
-            "apk": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/app-x86-release.apk',
+            "apk": 'https://github.com/wx2020/EasyTier/releases/download/v{}/app-x86-release.apk',
         },
         cli_pkg_tmpl: {},
         comment: "If you encounter abnormal display issues, please try upgrading WebView"
@@ -137,7 +137,7 @@ const packages = ref<Package[]>([
         arch: "aarch64",
         gui_pkg_tmpl: {},
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/Easytier-Magisk-v{}.zip'
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/Easytier-Magisk-v{}.zip'
         },
         comment: "Supports Magisk/KernelSU/Apatch. Will start an easytier-core instance on boot. Config located at /data/adb/modules/easytier_magisk/config/"
     },
@@ -146,7 +146,7 @@ const packages = ref<Package[]>([
         arch: "x86_64",
         gui_pkg_tmpl: {},
         cli_pkg_tmpl: {
-            "zip": 'https://github.com/EasyTier/EasyTier/releases/download/v{}/easytier-freebsd-13.2-x86_64-v{}.zip',
+            "zip": 'https://github.com/wx2020/EasyTier/releases/download/v{}/easytier-freebsd-13.2-x86_64-v{}.zip',
         },
     }
 ])
@@ -157,7 +157,7 @@ const all_proxy = new Set(data.github_accels)
 
 const channel = ref('easytier_latest_version')
 
-const url = 'https://github.com/EasyTier/EasyTier/releases/tag/v'
+const url = 'https://github.com/wx2020/EasyTier/releases/tag/v'
 const filter_os = ref('')
 const filter_arch = ref('')
 const accel_proxy = ref('')
@@ -177,7 +177,7 @@ function renderUrlTmpl(url_tmpl: string): string {
 
 # Download { #download }
 
-You can directly go to the [GitHub Release page](https://github.com/EasyTier/EasyTier/releases) to view the download links for all versions, or use the table below to find the version that suits you.
+You can directly go to the [GitHub Release page](https://github.com/wx2020/EasyTier/releases) to view the download links for all versions, or use the table below to find the version that suits you.
 
 The command line program package includes four executables:
 

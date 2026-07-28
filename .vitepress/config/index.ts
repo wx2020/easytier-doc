@@ -7,21 +7,21 @@ import { cn, cnSearch } from './cn'
 import { en } from './en'
 
 export default withMermaid({
-  base: '/',
+  base: '/easytier.github.io/',
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/easytier.png' }],
     ['meta', { name: 'msvalidate.01', content: 'C6CB41F1DA6096106497701D002B19AD' }],
-    ['meta', { name: 'author', content: 'EasyTier' }],
-    ['meta', { name: 'keywords', content: 'easytier,SD-WAN,networking' }],
+    ['meta', { name: 'author', content: 'wx2020' }],
+    ['meta', { name: 'keywords', content: 'easytier,SD-WAN,networking,self-hosted' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'EasyTier' }],
-    ['meta', { property: 'og:description', content: 'EasyTier official' }],
-    ['meta', { property: 'og:image', content: 'https://easytier.cn/easytier.png' }],
-    ['link', { rel: 'canonical', href: 'https://easytier.cn' }],
+    ['meta', { property: 'og:title', content: 'wx2020 EasyTier' }],
+    ['meta', { property: 'og:description', content: 'Private EasyTier build documentation' }],
+    ['meta', { property: 'og:image', content: 'https://wx2020.github.io/easytier.github.io/easytier.png' }],
+    ['link', { rel: 'canonical', href: 'https://wx2020.github.io/easytier.github.io/' }],
   ],
   themeConfig: {
-    siteTitle: 'EasyTier',
+    siteTitle: 'wx2020 EasyTier',
     logo: '/easytier.png',
     search: {
       provider: 'local',
@@ -34,24 +34,13 @@ export default withMermaid({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/EasyTier/Easytier',
+        link: 'https://github.com/wx2020/EasyTier',
         ariaLabel: 'Github',
       },
       {
         icon: 'gmail',
-        link: 'mailto:443152178@qq.com',
-        ariaLabel: 'Email',
-      },
-      {
-        icon: 'qq',
-        link: 'https://qm.qq.com/q/wFoTUChqZW',
-        ariaLabel: 'qq',
-      },
-      {
-        icon: {
-          svg: '<iconify-icon icon="twemoji:red-heart" style="font-size:1.2em" alt="Github Sponsors"></iconify-icon>',
-        },
-        link: '/#sponsor',
+        link: 'https://github.com/wx2020/EasyTier/issues',
+        ariaLabel: 'Issues',
       },
     ],
   },
@@ -70,6 +59,6 @@ export default withMermaid({
     },
   },
   sitemap: {
-    hostname: 'https://easytier.cn',
+    hostname: 'https://wx2020.github.io/easytier.github.io/',
   },
 })

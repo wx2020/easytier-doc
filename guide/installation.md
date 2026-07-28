@@ -123,7 +123,7 @@
    注意：一键脚本依赖 `unzip`，请提前下载并安装。
 
    ```bash
-   wget -O /tmp/easytier.sh "https://raw.githubusercontent.com/EasyTier/EasyTier/main/script/install.sh" && sudo bash /tmp/easytier.sh install --gh-proxy https://ghfast.top/
+   wget -O /tmp/easytier.sh "https://raw.githubusercontent.com/wx2020/EasyTier/main/script/install.sh" && sudo bash /tmp/easytier.sh install --gh-proxy https://ghfast.top/
    ```
 
    脚本执行成功后，EasyTier 的二进程程序会安装到 `/opt/easytier` 目录下，配置文件位于 `/opt/easytier/config/default.conf`。
@@ -139,7 +139,7 @@
 5. **通过源码安装**
 
    ```sh [cargo]
-   cargo install --git https://github.com/EasyTier/EasyTier.git easytier
+   cargo install --git https://github.com/wx2020/EasyTier.git easytier
    ```
 
    源码安装需要 Rust 环境，并且安装 LLVM。

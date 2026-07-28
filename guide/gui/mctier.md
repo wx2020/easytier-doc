@@ -382,7 +382,7 @@ MCTier 提供了强大的 HTTP over WireGuard 文件共享功能，让同大厅�
 感谢以下开源项目：
 
 - [Tauri](https://tauri.app/) - 跨平台桌面应用框架
-- [EasyTier](https://github.com/EasyTier/EasyTier) - 虚拟网络解决方案
+- [EasyTier](https://github.com/wx2020/EasyTier) - 虚拟网络解决方案
 - [React](https://react.dev/) - 用户界面库
 - [Ant Design](https://ant.design/) - UI 组件库
 - [Framer Motion](https://www.framer.com/motion/) - 动画库

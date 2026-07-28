@@ -13,6 +13,7 @@ export const en = defineConfig({
           { text: 'Introduction', link: '/en/guide/introduction' },
           { text: 'Download', link: '/en/guide/download' },
           { text: 'Installation CLI', link: '/en/guide/installation' },
+          { text: 'Private Deployment', link: '/en/guide/private-deployment' },
           { text: 'Installation GUI', link: '/en/guide/installation_gui' },
           { text: 'FAQ', link: '/en/guide/faq' },
         ],
@@ -76,16 +77,16 @@ export const en = defineConfig({
         link: '/en/web',
       },
       {
-        text: '<iconify-icon icon="fa6-solid:wand-magic-sparkles" style="margin-right:0.25rem;color:#8B5CF6;" alt="assistant"></iconify-icon>Config assistant',
-        link: 'https://easytier.rs/assistant',
+        text: '<iconify-icon icon="fa6-solid:server" style="margin-right:0.25rem;color:#8B5CF6;" alt="private"></iconify-icon>Private Deployment',
+        link: '/en/guide/private-deployment',
       },
       {
         text: '<iconify-icon icon="fa6-solid:bug" style="margin-right:0.25rem;color:#FF4500;" alt="bug"></iconify-icon>Submit Feedback',
-        link: 'https://github.com/EasyTier/EasyTier/issues',
+        link: 'https://github.com/wx2020/EasyTier/issues',
       },
       {
         text: '<iconify-icon icon="fa6-solid:clipboard-list" style="margin-right:0.25rem;color:#FF6347;" alt="clipboard"></iconify-icon>Changelog',
-        link: 'https://github.com/EasyTier/EasyTier/releases',
+        link: 'https://github.com/wx2020/EasyTier/releases',
       },
     ],
     footer: {
@@ -96,7 +97,7 @@ export const en = defineConfig({
         + 'Zhejiang ICP No. 2024137671-1</a>',
     },
     editLink: {
-      pattern: 'https://github.com/EasyTier/easytier.github.io/edit/main/:path',
+      pattern: 'https://github.com/wx2020/easytier.github.io/edit/main/:path',
       text: 'Edit this page on GitHub',
     },
     docFooter: {

@@ -4,7 +4,7 @@ Software and versions involved in the test (to avoid bias and for fair treatment
 
 | Software          | Version           | Link                                 |
 | ----------------- | ----------------- | ------------------------------------ |
-| EasyTier          | 1.2.1             | https://github.com/EasyTier/EasyTier |
+| EasyTier          | 1.2.1             | https://github.com/wx2020/EasyTier |
 | Networking Tool A | July 2024 Version |                                      |
 
 To be tested:

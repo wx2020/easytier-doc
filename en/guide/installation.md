@@ -123,7 +123,7 @@ This section only introduces installation methods. Please read the [Quick Networ
    Note: The one-click script depends on `unzip`, please download and install it in advance.
 
    ```bash
-   wget -O /tmp/easytier.sh "https://raw.githubusercontent.com/EasyTier/EasyTier/main/script/install.sh" && sudo bash /tmp/easytier.sh install --gh-proxy https://ghfast.top/
+   wget -O /tmp/easytier.sh "https://raw.githubusercontent.com/wx2020/EasyTier/main/script/install.sh" && sudo bash /tmp/easytier.sh install --gh-proxy https://ghfast.top/
    ```
 
    After the script executes successfully, EasyTier's binary programs will be installed in the `/opt/easytier` directory, and the configuration file is located at `/opt/easytier/config/default.conf`.
@@ -139,7 +139,7 @@ This section only introduces installation methods. Please read the [Quick Networ
 5. **Install from Source**
 
    ```sh [cargo]
-   cargo install --git https://github.com/EasyTier/EasyTier.git easytier
+   cargo install --git https://github.com/wx2020/EasyTier.git easytier
    ```
 
    Source installation requires Rust environment and LLVM installation.

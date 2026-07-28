@@ -16,7 +16,7 @@ Running `easytier-core` directly without parameters will generate the minimal co
 
 ## EasyTier Assistant
 
-If you do not want to write the configuration file manually, you can use [EasyTier Assistant](https://easytier.rs/assistant) to generate one, then load it with the `-c` parameter:
+The private build does not default to the official online config assistant. Prepare a self-hosted config server as described in [Private Deployment](../private-deployment), or write the config file manually and load it with the `-c` parameter:
 
 ```sh
 easytier-core -c ./config.toml
