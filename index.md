@@ -1,15 +1,14 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: EasyTier
-  text: 由 Rust 和 Tokio 驱动
-  tagline: ✨ 一个简单、安全、去中心化的异地组网方案
+  name: wx2020 EasyTier
+  text: 自修改私有化构建
+  tagline: 保留 EasyTier 组网能力，默认不依赖官方或公共基础设施
   image:
     light: '/gui-config-light.png'
     dark: '/gui-config-dark.png'
-    alt: 'Easytier GUI 配置界面'
+    alt: 'EasyTier GUI 配置界面'
   actions:
     - theme: brand
       text: 快速开始
@@ -20,84 +19,26 @@ hero:
     - theme: alt
       text: 私有化部署
       link: /guide/private-deployment
-    - theme: alt
-      text: 隐私政策
-      link: /guide/privacy
-    - theme: sponsor
-      text: 💚 赞助
-      link: /#sponsor
 
 features:
-  - title: 去中心化
-    details: 节点平等独立，无需中心化服务。<br>不区分客户端/服务端。
-    link: /guide/network/decentralized-networking
-  - title: 易用
-    details: 网页、客户端、命令行多方式操作
-  - title: 跨平台
-    details: 支持 Win / MacOS / Linux / FreeBSD / Android<br>兼容 X86 / ARM / MIPS 架构
+  - title: 私有化默认值
+    details: 默认不写入官方配置服务器、公共 STUN、公共 peer 或官方 Web API。
+    link: /guide/private-deployment
+  - title: 完整配置服务器 URL
+    details: --config-server 需要传入完整 URL，短用户名不会回退到官方服务。
+    link: /guide/private-deployment
+  - title: 自建基础设施
+    details: 按需自建配置服务器、公共 peer、STUN 服务和 Web 控制台。
+    link: /guide/private-deployment
+  - title: 同步上游
+    details: 使用 official-main、official-release、dev、main 四个长期分支维护私有补丁。
+    link: /guide/private-deployment
+  - title: 多平台
+    details: 保留 Windows、macOS、Linux、FreeBSD、Android 等平台构建能力。
     link: /guide/download
-  - title: 安全
-    details: 支持 AES-GCM 等多种加密算法 或 WireGuard 加密<br>防止中间人攻击
-    link: /guide/network/configurations#:~:text=加密算法&text=ET_ENCRYPTION_ALGORITHM
-  - title: 高效 NAT 穿透
-    details: 支持 UDP、IPv6 穿透<br>可打通 NAT4-NAT4 网络
-    link: /guide/aboutp2p
-  - title: 子网代理
-    details: 节点可共享子网供其他节点访问。
-    link: /guide/network/point-to-networking
-  - title: 智能路由
-    details: 延迟优先，自动选路<br>提供最佳网络体验
-    link: /guide/network/configurations#:~:text=延迟优先模式&text=ET_LATENCY_FIRST
-  - title: 高性能
-    details: 全链路零拷贝<br>支持 TCP / UDP / WS / WSS / WG / QUIC / FakeTCP 等协议
-    link: /guide/perf
-  - title: 抗 UDP 丢包
-    details: KCP / QUIC 代理<br>优化高丢包环境下的延迟和带宽
-    link: /guide/network/kcp-proxy
+  - title: EasyTier 能力
+    details: 继续支持 P2P、子网代理、Magic DNS、WireGuard 接入和多协议传输。
+    link: /guide/networking
 ---
-
-## 相关链接
-
-- QQ 群：
-  - 一群 [949700262](https://qm.qq.com/q/wFoTUChqZW)
-  - 二群 [837676408](https://qm.qq.com/q/4V33DrfgHe)
-  - 三群 [957189589](https://qm.qq.com/q/YNyTQjwlai)
-- Telegram：https://t.me/easytier
-- Discord：https://discord.gg/yRCkdu8brx
-
-## 鸣谢
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
-  <a href="https://langlangy.cn/?i26c5a5" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; border: 1px solid var(--vp-c-divider); border-radius: 28px; padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; width: 250px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); background-color: rgba(215, 230, 240, 0.81);">
-    <img src="https://langlangy.cn/home/img/logo.png" alt="浪浪云" style="height: 60px;">
-  </a>
-
-  <a href="https://www.rainyun.com/NjM0NzQ1_" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; border: 1px solid var(--vp-c-divider); border-radius: 28px; padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; width: 250px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); background-color: rgba(215, 230, 240, 0.81);">
-    <img src="https://app.rainyun.com/img/logo.d193755d.png" alt="雨云" style="height: 60px;">
-  </a>
-
-  <a href="https://xyebbs.com" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; border: 1px solid var(--vp-c-divider); border-radius: 28px; padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; width: 250px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); background-color: rgba(215, 230, 240, 0.81);">
-    <img src="https://resource-api.xyeidc.com/client/pics/2fdb491d" alt="星叶云联" style="height: 60px;">
-  </a>
-
-  <a href="https://www.dkdun.cn/aff/RZGBFYSW" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; border: 1px solid var(--vp-c-divider); border-radius: 28px; padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; width: 250px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); background-color: rgba(215, 230, 240, 0.81);">
-    <img src="https://www.dkdun.cn/themes/web/www/upload/local68c2dbb2ab148.png" alt="林枫云" style="height: 60px;">
-  </a>
-</div>
-
-## 赞助 {#sponsor}
-
-如果您觉得 EasyTier 对您有所帮助，欢迎赞助我们。
-
-软件的开发和维护需要大量的时间和精力，您的赞助将帮助我们更好地维护和改进 EasyTier。
-
-<div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <img src="/assets/wechat.png" alt="微信" style="width: 250px; max-width: 100%; border-radius: 28px;" />
-  </div>
-  <div style="text-align: center;">
-    <img src="/assets/alipay.png" alt="支付宝" style="width: 250px; max-width: 100%; border-radius: 28px;" />
-  </div>
-</div>
 
 <Home />
