@@ -8,8 +8,8 @@ It is maintained for the `wx2020/EasyTier` private build and is not the official
 
 ## Summary
 
-- Rebranded the site as `wx2020 EasyTier`.
-- Changed repository, issue, release, edit, install, and download links to `wx2020/EasyTier` or `wx2020/easytier.github.io`.
+- Rebranded the site as `非官方 EasyTier`.
+- Changed repository, issue, release, edit, install, and download links to `wx2020/EasyTier` or `wx2020/easytier-doc`.
 - Added Chinese and English private deployment documentation.
 - Updated the homepage to describe the private modified build.
 - Removed homepage community, sponsor, and acknowledgment links from the upstream site.

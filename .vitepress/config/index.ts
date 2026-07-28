@@ -7,7 +7,7 @@ import { cn, cnSearch } from './cn'
 import { en } from './en'
 
 export default withMermaid({
-  base: '/easytier.github.io/',
+  base: '/easytier-doc/',
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/easytier.png' }],
@@ -15,13 +15,13 @@ export default withMermaid({
     ['meta', { name: 'author', content: 'wx2020' }],
     ['meta', { name: 'keywords', content: 'easytier,SD-WAN,networking,self-hosted' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'wx2020 EasyTier' }],
+    ['meta', { property: 'og:title', content: '非官方 EasyTier' }],
     ['meta', { property: 'og:description', content: 'Private EasyTier build documentation' }],
-    ['meta', { property: 'og:image', content: 'https://wx2020.github.io/easytier.github.io/easytier.png' }],
-    ['link', { rel: 'canonical', href: 'https://wx2020.github.io/easytier.github.io/' }],
+    ['meta', { property: 'og:image', content: 'https://wx2020.github.io/easytier-doc/easytier.png' }],
+    ['link', { rel: 'canonical', href: 'https://wx2020.github.io/easytier-doc/' }],
   ],
   themeConfig: {
-    siteTitle: 'wx2020 EasyTier',
+    siteTitle: '非官方 EasyTier',
     logo: '/easytier.png',
     search: {
       provider: 'local',
@@ -58,7 +58,12 @@ export default withMermaid({
       compilerOptions: { isCustomElement: tag => tag === 'iconify-icon' },
     },
   },
+  vite: {
+    optimizeDeps: {
+      include: ['mermaid > @braintree/sanitize-url'],
+    },
+  },
   sitemap: {
-    hostname: 'https://wx2020.github.io/easytier.github.io/',
+    hostname: 'https://wx2020.github.io/easytier-doc/',
   },
 })
